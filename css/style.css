@@ -346,6 +346,17 @@ p {
     color: var(--blue)
 }
 
+.button-accent.button-active:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.button-accent:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
 .col-height {
     display: flex;
     flex-direction: column;
