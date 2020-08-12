@@ -442,10 +442,6 @@ p {
     padding-right: 0;
 }
 
-.table-custom tr:hover {
-    background-color: rgba(227, 5, 20, .1) !important;
-}
-
 .table-custom tbody td:nth-child(1) {
     width: 80%;
 }
