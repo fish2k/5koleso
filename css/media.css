@@ -4,12 +4,430 @@
     }
 }
 
-@media (max-width: 1500px) {}
+@media (max-width: 1500px) {
+    .container {
+        max-width: 100%;
+    }
 
-@media (max-width: 1200px) {}
+    .app-steps-item span {
+        font-size: 23px;
+        margin-left: 0;
+    }
 
-@media (max-width: 991px) {}
+    .table-custom {
+        width: 100%;
+        background-color: rgba(255,255,255, .5);
+    }
 
-@media (max-width: 767px) {}
+    .header-nav-link {
+        margin-right: 20px;
+    }
 
-@media (max-width: 480px) {}
+    .top-section-title {
+        font-size: 40px;
+    }
+
+    .prices {
+        background-position-x: 167%;
+    }
+
+    .points-list {
+        max-height: 350px;
+    }
+
+    .point-actions {
+        align-items: flex-start;
+    }
+
+    .button-point {
+        padding: 8px 15px;
+    }
+
+    .point-actions-item {
+        flex: 0 0 37px;
+        max-width: 37px;
+        height: 37px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .footer-shape {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        max-width: none;
+        height: 100%;
+        opacity: .3;
+    }
+}
+
+@media (max-width: 1200px) {
+    .app-steps-item {
+        padding-left: 40px;
+        font-size: 40px;
+        background-size: 25px;
+        background-position-y: 9px;
+    }
+
+    .app-steps-item span {
+        font-size: 20px;
+    }
+
+    .app-steps-list {
+        margin-top: 30px;
+    }
+
+    .app {
+        margin-top: 100px;
+    }
+
+    .app-map-inner img {
+        width: 100%;
+    }
+
+    .header {
+        padding-top: 25px;
+    }
+
+    .contact-links {
+        padding-top: 7px;
+    }
+
+    .header-nav-btn {
+        padding: 13px 15px;
+    }
+
+    .header-logo-src {
+        max-width: 222px;
+    }
+
+    .contact-links-item {
+        font-size: 14px;
+        background-position: 0 1px;
+    }
+
+    .header .contact-links {
+        padding-left: 20px;
+    }
+
+    .header-nav-link,
+    .header-nav-btn {
+        font-size: 14px;
+    }
+
+    .top-section {
+        height: auto;
+        padding-bottom: 100px;
+        padding-top: 180px;
+    }
+
+    .top-section-list {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .prices {
+        background-position-x: 600px;
+    }
+
+    .points-list-item {
+        flex-direction: column;
+    }
+
+    .points-list-item-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .points-item-contact:nth-child(1) {
+        margin-right: 15px;
+    }
+
+    .points-item-contact {
+        background-position-y: 2px;
+        margin-bottom: 8px !important;
+    }
+
+    .points-list-item {
+        align-items: unset;
+    }
+
+    .point-actions {
+        flex: 0 0 240px;
+        max-width: 240px;
+    }
+}
+
+@media (max-width: 991px) {
+    .top-section {
+        padding-top: 100px;
+    }
+
+    .points-list-item {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .points-block {
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .points-list-item-col:nth-child(1) {
+        flex-direction: column;
+    }
+
+    .points-list-item-col:nth-child(2) {
+        justify-content: flex-end;
+    }
+
+    .points-list-item-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .prices {
+        background-image: none;
+        margin-top: 80px;
+    }
+
+    .services {
+        margin-top: 50px;
+    }
+
+    .row-services {
+        margin-top: 20px;
+    }
+
+    .services-swipe {
+        width: 125px;
+    }
+
+    .services-nav {
+        top: calc(50% - 50px);
+    }
+
+    .services-slider {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .top-section-title {
+        font-size: 28px;
+    }
+
+    .footer-col {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        flex: none;
+        max-width: 257px;
+        margin-bottom: 15px;
+    }
+
+    .footer .contact-links {
+        padding-left: 0;
+    }
+
+    .footer-shape {
+        height: auto;
+        max-width: 100%;
+        top: auto;
+    }
+
+    .points-list-item-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .points-block {
+        margin-left: -15px;
+        margin-right: -15px;
+        border-radius: 0;
+    }
+
+    .point-actions {
+        opacity: 1;
+    }
+
+    .points-list-item-col:nth-child(1) {
+        flex-direction: row;
+    }
+
+    .points-list-item-col:nth-child(2) {
+        justify-content: center;
+    }
+
+    .points-list-item {
+        flex-wrap: wrap;
+    }
+
+    .points {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .row-points {
+        margin-top: 50px;
+    }
+
+    .btns-block .button-default {
+        margin-bottom: 15px;
+    }
+
+    .section-heading {
+        font-size: 34px;
+        background-size: 35px;
+        padding-right: 39px;
+        background-position-y: 15px;
+    }
+
+    .price-btns {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .nav-price-link {
+        margin-bottom: 15px !important;
+    }
+
+    .price-content {
+        margin-top: 0;
+    }
+
+    .row-prices {
+        margin-top: 30px;
+    }
+
+    .prices {
+        margin-top: 50px;
+        padding-top: 0;
+    }
+
+    .app {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-section-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .top-section-icon {
+        flex: 0 0 40px;
+        max-width: 40px;
+    }
+
+    .app-steps-item {
+        font-size: 16px;
+        background-size: 16px;
+        background-position-y: 0;
+        padding-left: 30px;
+    }
+
+    .app-steps-item span {
+        font-size: 14px;
+    }
+
+    .app-map-bar {
+        position: static;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        flex-direction: column;
+    }
+
+    .map-city-name {
+        margin-bottom: 15px;
+    }
+
+    .points-list-item-col {
+        justify-content: flex-start;
+    }
+
+    .point-actions {
+        flex: 0 0 227px;
+        max-width: 227px;
+    }
+
+    .points-block-inner {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .points-list {
+        border-radius: 15px;
+    }
+
+    .points-list-item {
+        border-radius: 15px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+        font-size: 13px;
+    }
+
+    .points-item-contact {
+        line-height: 1.4;
+    }
+
+    .prices-info {
+        font-size: 14px;
+        align-items: flex-start;
+    }
+
+    .prices-info img {
+        margin-top: 3px;
+    }
+
+    .table-custom {
+        font-size: 14px;
+    }
+
+    .section-heading {
+        font-size: 20px;
+        background-size: 21px;
+        padding-right: 23px;
+        background-position-y: 8px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .button-default {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .btns-block .button-default {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .services-slider {
+        height: 250px;
+    }
+
+    .services-swipe {
+        width: 90px;
+    }
+
+    .footer {
+        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 14px;
+    }
+}

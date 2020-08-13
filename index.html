@@ -19,7 +19,7 @@
 
 <body>
 
-  <div class="header">
+  <div class="header" style="display: none;">
     <div class="container">
       <div class="header-line">
         <div class="header-line-col">
@@ -78,7 +78,7 @@
         </div>
       </div>
 
-      <div class="top-section-btns">
+      <div class="top-section-btns btns-block">
         <a href="javascript:void(0)" class="button-default button-active top-section-btn">Подробнее</a>
         <a href="javascript:void(0)" class="button-default top-section-btn">Записаться</a>
       </div>
@@ -90,7 +90,7 @@
       <div class="section-heading">Об услуге</div>
 
       <div class="row row-services">
-        <div class="col-md-6 col-height">
+        <div class="col-lg-6 col-height">
           <div class="col-height-item">
             <p>Правка литых дисков достаточно сложна и требует наличия специального оборудования.</p>
             <p>
@@ -111,19 +111,19 @@
             </p>
           </div>
           <div class="col-height-item">
-            <div class="services-btns">
+            <div class="services-btns btns-block">
               <a href="javascript:void(0)" class="button-default button-accent button-active">Цены</a>
               <a href="javascript:void(0)" class="button-default button-accent">Точки обслуживания</a>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="services-slider swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" style="background-image: url(images/services-slides/1.jpg)"></div>
-              <div class="swiper-slide" style="background-image: url(images/services-slides/2.jpg)"></div>
-              <div class="swiper-slide" style="background-image: url(images/services-slides/3.jpg)"></div>
-              <div class="swiper-slide" style="background-image: url(images/services-slides/4.jpg)"></div>
+              <div class="swiper-slide services-slide" style="background-image: url(images/services-slides/1.jpg)"></div>
+              <div class="swiper-slide services-slide" style="background-image: url(images/services-slides/2.jpg)"></div>
+              <div class="swiper-slide services-slide" style="background-image: url(images/services-slides/3.jpg)"></div>
+              <div class="swiper-slide services-slide" style="background-image: url(images/services-slides/4.jpg)"></div>
             </div>
 
             <div class="services-nav">
@@ -145,6 +145,10 @@
                 navigation: {
                   prevEl: '.services-prev',
                   nextEl: '.services-next'
+                },
+
+                autoplay: {
+                  delay: 3000
                 },
 
                 on: {
@@ -282,14 +286,13 @@
               </div>
             </div>
           </div>
-
-          <div class="price-btns">
-            <a href="javascript:void(0)" class="button-default button-accent button-active">Применить скидку 50%</a>
-            <a href="javascript:void(0)" class="button-default button-accent">Записаться онлайн</a>
-          </div>
         </div>
         <div class="col-lg-6"></div>
         <div class="col-12">
+          <div class="price-btns btns-block">
+            <a href="javascript:void(0)" class="button-default button-accent button-active">Применить скидку 50%</a>
+            <a href="javascript:void(0)" class="button-default button-accent">Записаться онлайн</a>
+          </div>
           <div class="prices-info">
             <img src="images/i.svg" alt="Шиномонтаж, снятие, установка и балансировка не входит в стоимость правки литого диска."> Шиномонтаж, снятие, установка и балансировка не входит в стоимость правки литого диска.
           </div>
