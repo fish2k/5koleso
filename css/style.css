@@ -143,6 +143,7 @@ body {
 .header-nav {
     display: flex;
     align-items: center;
+    transition: all .2s ease;
 }
 
 .header-nav-link {
@@ -253,7 +254,7 @@ body {
     padding: 16px 30px 13px;
     text-transform: uppercase;
     border-radius: 30px;
-    font-weight: normal;
+    font-weight: 500;
 
     transition: all .15s ease;
 }
@@ -801,4 +802,65 @@ i.rub {
     position: absolute;
     right: -6px;
     top: -100px;
+}
+
+.header-burger {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    width: 35px;
+    height: 35px;
+}
+
+.burger-line {
+    position: absolute;
+    height: 5px;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+
+    border-radius: 5px;
+}
+
+.line-1 {
+    top: 3px;
+}
+
+.line-2 {
+    top: 15px;
+}
+
+.line-3 {
+    top: 27px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(255,255,255, .7);
+
+    z-index: -1;
+
+    transition: opacity .3s ease;
+    opacity: 0;
+}
+
+body[class*="state-"] {
+    overflow: hidden;
+}
+
+[class*="state-"] .overlay {
+    opacity: 1;
+    z-index: 2;
+}
+
+.state-nav .header-nav {
+    display: flex;
+    left: 0;
 }
