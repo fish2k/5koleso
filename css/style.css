@@ -942,3 +942,11 @@ body[class*="state-"] {
         transform: scale(0.8)
     }
 }
+
+.header-nav-responsive {
+    display: none;
+}
+
+.responsive-nav-close {
+    display: none;
+}
