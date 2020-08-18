@@ -15,6 +15,7 @@
   <script src="libs/jquery/jquery.min.js"></script>
   <script src="libs/swiper/swiper.min.js"></script>
   <script src="libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="libs/smooth-scroll.min.js"></script>
 </head>
 
 <body>
@@ -34,9 +35,9 @@
         </div>
         <div class="header-line-col">
           <div class="header-nav">
-            <a href="javascript:void(0)" class="header-nav-link">Об услуге</a>
-            <a href="javascript:void(0)" class="header-nav-link">Цены</a>
-            <a href="javascript:void(0)" class="header-nav-link">Карта проезда</a>
+            <a href="#uslugi" class="header-nav-link" data-scroll>Об услуге</a>
+            <a href="#tseny" class="header-nav-link" data-scroll>Цены</a>
+            <a href="#karta" class="header-nav-link" data-scroll>Карта проезда</a>
             <a href="javascript:void(0)" class="header-nav-btn">Записаться онлайн</a>
           </div>
         </div>
@@ -90,7 +91,7 @@
     </div>
   </div>
 
-  <div class="services">
+  <div id="uslugi" class="services">
     <div class="container">
       <div class="section-heading">Об услуге</div>
 
@@ -169,7 +170,7 @@
     </div>
   </div>
   
-  <div class="prices">
+  <div id="tseny" class="prices">
     <div class="container">
       <div class="section-heading heading-accent">Цены</div>
 
@@ -306,7 +307,7 @@
     </div>
   </div>
 
-  <div class="points">
+  <div id="karta" class="points">
     <div class="container">
       <div class="section-heading heading-basic heading-accent">33 точки <span>обслуживания в Казани</span></div>
 
