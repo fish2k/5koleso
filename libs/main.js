@@ -1,14 +1,17 @@
 $(document).ready(function () {
-    var loader = setTimeout(function () {
-        $('.loader').fadeOut(599);
-
-        clearTimeout(loader)
-    }, 2500)
-    
     const burger  = $('.header-burger, .button-nav-close'),
         body      = $('body'),
         overlay   = $('.overlay')
 
+        body.addClass('onloader');
+
+    var loader = setTimeout(function () {
+        $('.loader').fadeOut(599);
+        body.removeClass('onloader');
+
+        clearTimeout(loader)
+    }, 2500)
+    
     burger.click(() => {
         $(this).toggleClass('burger-active')
 

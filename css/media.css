@@ -506,7 +506,7 @@
     .top-section {
         padding-top: 110px;
         padding-bottom: 65px;
-        background-position: -575px bottom;
+        background-position: calc(100% + 470px) bottom;
     }
 
     .footer .contact-links {

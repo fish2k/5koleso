@@ -206,6 +206,7 @@ body {
 .top-section-title i {
     font-size: 76%;
     font-style: normal;
+    font-weight: 400;
     margin-right: 15px;
 }
 
@@ -286,6 +287,10 @@ body {
 
 .services {
     margin-top: 135px;
+}
+
+.onloader {
+    overflow-y: hidden;
 }
 
 .section-heading {
@@ -498,7 +503,7 @@ p {
 i.rub {
     font-style: normal;
     font-size: 96%;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .price-btns {
