@@ -75,7 +75,7 @@ body {
 }
 
 .header-logo-src {
-    max-width: 257px;
+    width: 257px;
 }
 
 .header-line {
@@ -100,7 +100,7 @@ body {
     margin-right: 24px;
     background-position: 0 3px;
     background-repeat: no-repeat;
-    font-weight: 500;
+    font-weight: 600;
 
     position: relative;
 }
@@ -149,7 +149,7 @@ body {
 .header-nav-link {
     text-transform: uppercase;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     margin-right: 49px;
 }
 
@@ -162,7 +162,7 @@ body {
     text-transform: uppercase;
     color: #fff;
     padding: 17px 30px 14px;
-    font-weight: 500;
+    font-weight: 600;
     background-color: var(--accent);
     border-radius: 30px;
 
@@ -192,7 +192,7 @@ body {
 
 .top-section-title {
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .top-section-title span {
@@ -254,13 +254,13 @@ body {
     padding: 16px 30px 13px;
     text-transform: uppercase;
     border-radius: 30px;
-    font-weight: 200;
+    font-weight: 300;
 
     transition: all .15s ease;
 }
 
 .button-active {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .button-active,
@@ -287,7 +287,7 @@ body {
 .section-heading {
     display: inline-block;
     font-size: 48px;
-    font-weight: 900;
+    font-weight: 800;
     padding-right: 50px;
     background-image: url(../images/arrows-title.svg);
     background-position: right 20px;
@@ -350,7 +350,7 @@ p {
     background-color: var(--blue);
     border-color: var(--blue);
     color: #fff;
-    font-weight: 500
+    font-weight: 600
 }
 
 .button-accent {
@@ -401,7 +401,7 @@ p {
     padding: 0;
     border: none !important;
     color: #6e6e6e;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
 
     position: relative;
@@ -444,7 +444,7 @@ p {
 
 .table-custom thead th {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     border-top: none;
     border-bottom: none;
     position: relative;
@@ -471,7 +471,7 @@ p {
 }
 .table-custom tbody td:nth-child(2) {
     width: 20%;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .table-custom th {
@@ -547,7 +547,7 @@ i.rub {
 }
 
 .section-heading span {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .points .heading-accent span {
@@ -613,7 +613,7 @@ i.rub {
     border-color: #6e6e6e;
     background-color: #6e6e6e;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .active .button-point,
@@ -706,6 +706,7 @@ i.rub {
     position: relative;
     box-shadow: 0px 0px 70px 0px rgba(42, 57, 106, 0.15);
     border-radius: 25px;
+    overflow: hidden;
 }
 
 .app-map-bar {
@@ -747,7 +748,7 @@ i.rub {
 .app-steps-item {
     color: #9b9b9b;
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 600;
     padding-left: 54px;
 
     background-image: url(../images/arrow-single-default.svg);
@@ -810,7 +811,7 @@ i.rub {
 .footer-copyright {
     margin-top: 31px;
     color: #7e7e7e;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .footer .container {
@@ -906,5 +907,34 @@ body[class*="state-"] {
 }
 
 .loader {
-    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+}
+
+.services-swipe {
+    outline: none !important;
+}
+
+.loader-img {
+    width: 100px;
+    animation: loader 1.3s ease-in-out 0s infinite alternate;
+}
+
+@keyframes loader {
+    from {
+        transform: scale(0.6)
+    }
+    to {
+        transform: scale(0.8)
+    }
 }

@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    var loader = setTimeout(function () {
+        $('.loader').slideUp(300);
+
+        clearTimeout(loader)
+    }, 2500)
+    
     const burger  = $('.header-burger'),
         body      = $('body'),
         overlay   = $('.overlay')
