@@ -105,6 +105,10 @@ body {
     position: relative;
 }
 
+.contact-links-item:last-child {
+    margin-right: 0;
+}
+
 .contact-links-item::before {
     position: absolute;
     content: '';

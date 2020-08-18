@@ -401,7 +401,8 @@
 
     .header-nav-responsive .contact-links {
         display: table;
-        margin-left: 0;
+        padding-top: 0;
+        padding-left: 0;
     }
 
     .header-nav-responsive .contact-links-item {

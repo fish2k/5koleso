@@ -5,7 +5,7 @@ $(document).ready(function () {
         clearTimeout(loader)
     }, 2500)
     
-    const burger  = $('.header-burger'),
+    const burger  = $('.header-burger, .button-nav-close'),
         body      = $('body'),
         overlay   = $('.overlay')
 
