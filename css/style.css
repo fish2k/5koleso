@@ -904,3 +904,7 @@ body[class*="state-"] {
     top: calc(50%);
     transform: rotate(-135deg);
 }
+
+.loader {
+    display: none;
+}
