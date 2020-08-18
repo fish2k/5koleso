@@ -786,6 +786,10 @@ i.rub {
     max-width: 257px;
 }
 
+.footer-logo img {
+    width: 100%;
+}
+
 .footer-content {
     margin-top: 47px;
 }
