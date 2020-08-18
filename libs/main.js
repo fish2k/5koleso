@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var loader = setTimeout(function () {
-        $('.loader').slideUp(300);
+        $('.loader').fadeOut(599);
 
         clearTimeout(loader)
     }, 2500)
