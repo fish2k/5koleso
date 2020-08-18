@@ -355,12 +355,21 @@
 }
 
 @media (max-width: 480px) {
+    .prices {
+        padding-bottom: 0;
+    }
+
+    .top-section-list {
+        margin-bottom: 25px;
+    }
+
     .header-burger {
         top: 8px;
     }
 
     .top-section {
         padding-top: 80px;
+        padding-bottom: 35px;
     }
 
     .top-section-title {
@@ -468,7 +477,6 @@
         width: 100%;
         justify-content: center;
         margin-right: 0;
-        margin-bottom: 5px;
     }
 
     .services-slider {
