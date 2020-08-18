@@ -20,6 +20,10 @@
 
 <body>
 
+  <div class="loader">
+    <img src="images/logo-min.png" alt="5kolesa" class="loader-img">
+  </div>
+
   <div class="header">
     <div class="container">
       <div class="header-line">
@@ -96,7 +100,7 @@
       <div class="section-heading">Об услуге</div>
 
       <div class="row row-services">
-        <div class="col-lg-6 col-height">
+        <div class="col-lg-6 col-height services-info">
           <div class="col-height-item">
             <p>Правка литых дисков достаточно сложна и требует наличия специального оборудования.</p>
             <p>
@@ -118,12 +122,12 @@
           </div>
           <div class="col-height-item">
             <div class="services-btns btns-block">
-              <a href="javascript:void(0)" class="button-default button-accent button-active">Цены</a>
-              <a href="javascript:void(0)" class="button-default button-accent">Точки обслуживания</a>
+              <a href="#tseny" class="button-default button-accent button-active" data-scroll>Цены</a>
+              <a href="#karta" class="button-default button-accent" data-scroll>Точки обслуживания</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 services-photos">
           <div class="services-slider swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide services-slide" style="background-image: url(images/services-slides/1.jpg)"></div>
@@ -312,7 +316,7 @@
       <div class="section-heading heading-basic heading-accent">33 точки <span>обслуживания в Казани</span></div>
 
       <div class="row row-points">
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-points-select">
           <div class="points-block">
             <div class="points-block-inner">
               <div class="points-list">
@@ -385,7 +389,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-points-map">
           <div class="points-block">
             <img src="images/map-placeholder.png" alt="">
           </div>

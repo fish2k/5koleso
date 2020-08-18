@@ -175,13 +175,18 @@
     }
     
     .header {
-        background-color: var(--blue);
         padding-top: 10px;
         padding-bottom: 10px;
         position: fixed;
         top: 0;
 
         z-index: 5;
+
+        transition: all .3s ease;
+    }
+
+    .header-active {
+        background-color: var(--blue);
     }
 
     .header-nav {
@@ -191,9 +196,9 @@
         width: 280px;
         bottom: 0;
         background-color: var(--blue);
-        padding: 20px 15px;
+        padding: 50px 15px 20px;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .header-nav-link {
@@ -262,6 +267,7 @@
     .footer-col {
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
     }
 
     .footer-logo {
@@ -286,9 +292,7 @@
     }
 
     .points-block {
-        margin-left: -15px;
-        margin-right: -15px;
-        border-radius: 0;
+        border-radius: 15px;
     }
 
     .point-actions {
@@ -355,6 +359,62 @@
 }
 
 @media (max-width: 480px) {
+    .overlay {
+        background-color: transparent;
+    }
+
+    .header-nav {
+        width: 100%;
+        left: 0;
+        bottom: auto;
+        height: 0;
+        opacity: 0;
+        transition-duration: .5s;
+        padding-top: 0;
+    }
+
+    .state-nav .header-nav {
+        padding-top: 80px;
+        left: 0;
+        margin-top: 0;
+        height: 100%;
+        opacity: 1;
+    }
+
+    .header-nav-btn {
+        animation: btnShadowRed .7s ease-in-out 0s infinite alternate;
+    }
+
+    @keyframes btnShadowRed {
+        from {
+            box-shadow: 0px 0px 50px 0px rgba(218, 184, 170, 0.3);
+        }
+        to {
+            box-shadow: 0px 0px 50px 0px rgba(218, 184, 170, 0.5);
+        }
+    }
+
+    .header-nav-link,
+    .header-nav-btn {
+        display: none;
+    }
+
+    .state-nav .header-nav-link,
+    .state-nav .header-nav-btn {
+        display: block;
+    }
+
+    .top-section-name {
+        font-size: 14px;
+        padding-left: 15px;
+    }
+
+    .header-nav-btn {
+        padding-top: 14px;
+        padding-bottom: 12px;
+        margin-top: 10px;
+    }
+
     .prices {
         padding-bottom: 0;
     }
@@ -367,13 +427,46 @@
         top: 8px;
     }
 
+    .top-section-btns {
+        display: flex;
+    }
+
+    .top-section-btn {
+        margin-right: 15px !important;
+    }
+
+    
+    .top-section-btns .button-default {
+        flex: 0 0 calc(50% - 15px);
+        max-width: calc(50% - 15px);
+    }
+
+    .top-section-btns .button-active {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
     .top-section {
         padding-top: 80px;
-        padding-bottom: 35px;
+        padding-bottom: 65px;
+        background-position: 66% bottom;
     }
 
     .top-section-title {
-        font-size: 18px;
+        font-size: 24px;
+    }
+
+    .top-section-title br {
+        display: none;
+    }
+
+    .top-section-title i {
+        margin-right: 6px;
+    }
+
+    .top-section-title em {
+        display: inline-block;
+        margin-left: 10px;
     }
 
     .header-logo-src {
@@ -418,8 +511,8 @@
     }
 
     .point-actions {
-        flex: 0 0 227px;
-        max-width: 227px;
+        flex: 0 0 208px;
+        max-width: 208px;
     }
 
     .points-block-inner {
@@ -430,13 +523,23 @@
 
     .points-list {
         border-radius: 15px;
+        max-height: 320px;
+    }
+
+    .points-block {
+        height: 350px;
     }
 
     .points-list-item {
         border-radius: 15px;
+        padding: 15px;
         margin-bottom: 15px;
         margin-right: 15px;
         font-size: 13px;
+    }
+
+    .point-actions-item {
+        margin-right: 5px;
     }
 
     .points-item-contact {
@@ -457,10 +560,78 @@
     }
 
     .section-heading {
-        font-size: 20px;
-        background-size: 21px;
-        padding-right: 23px;
-        background-position-y: 8px;
+        font-size: 24px;
+        background-size: 27px;
+        padding-right: 33px;
+        background-position-y: 9px;
+    }
+
+    .services-info {
+        order: 2
+    }
+
+    .serivces-photos {
+        order: 1
+    }
+
+    .points {
+        margin-top: 60px;
+    }
+
+    .points-list-item-col:nth-child(1) {
+        justify-content: center;
+    }
+
+    .point-addr {
+        background-image: none;
+        padding-left: 0;
+        font-size: 14px;
+    }
+
+    .points-item-contact:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .point-tel {
+        display: none;
+    }
+
+    .col-points-map {
+        order: 1
+    }
+
+    .col-points-select {
+        order: 2
+    }
+
+    .footer-copyright {
+        margin-top: 5px;
+        margin-bottom: 150px;
+    }
+
+    .footer-shape {
+        bottom: 10px;
+    }
+
+    .app {
+        margin-top: 75px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .price-btns .button-accent:hover, .price-btns .button-accent.button-active {
+        animation: none;
+    }
+
+    .services-slider {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .nav-price-link {
+        font-size: 14px;
     }
 
     p {

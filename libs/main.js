@@ -23,5 +23,13 @@ $(document).ready(function () {
         body.removeClass('state-nav')
     })
 
-    
+    $(window).scroll(evt => {
+        var st = $(this).scrollTop();
+
+        if (st >= 100) {
+            $('.header').addClass('header-active')
+        } else {
+            $('.header').removeClass('header-active')
+        }
+    })
 })
