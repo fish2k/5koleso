@@ -455,6 +455,14 @@
         background-position: 56% bottom;
     }
 
+    .footer .contact-links {
+        display: table;
+    }
+
+    .footer .contact-links-item {
+        display: inline-block
+    }
+
     .top-section-title {
         font-size: 24px;
     }
