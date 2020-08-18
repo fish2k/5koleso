@@ -19,7 +19,7 @@ $(document).ready(function () {
             body.removeClass('state-nav')
         })
     
-    $('.header-nav-link').click(evt => {
+    $('.header-nav-link, .header-nav-btn').click(evt => {
         body.removeClass('state-nav')
     })
 

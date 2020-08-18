@@ -908,3 +908,7 @@ body[class*="state-"] {
 .loader {
     display: none;
 }
+
+.footer .contact-links {
+    display: flex;
+}

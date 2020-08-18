@@ -412,6 +412,8 @@
     .header-nav-btn {
         padding-top: 14px;
         padding-bottom: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
         margin-top: 10px;
     }
 
@@ -420,7 +422,8 @@
     }
 
     .top-section-list {
-        margin-bottom: 25px;
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 
     .header-burger {
@@ -449,7 +452,7 @@
     .top-section {
         padding-top: 80px;
         padding-bottom: 65px;
-        background-position: 66% bottom;
+        background-position: 56% bottom;
     }
 
     .top-section-title {
@@ -640,8 +643,8 @@
 
     .button-default {
         font-size: 14px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 
     .btns-block .button-default {
