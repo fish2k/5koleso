@@ -204,10 +204,11 @@ body {
 }
 
 .top-section-title i {
-    font-size: 76%;
+    font-size: 70%;
     font-style: normal;
     font-weight: 400;
     margin-right: 15px;
+    margin-left: -4px;
 }
 
 .top-section-title em {
@@ -502,7 +503,7 @@ p {
 
 i.rub {
     font-style: normal;
-    font-size: 96%;
+    font-size: 80%;
     font-weight: 400;
 }
 
